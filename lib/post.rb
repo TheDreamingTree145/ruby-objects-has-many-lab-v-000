@@ -9,10 +9,7 @@ class Post
 
 
   def author_name
-    if self.author.respond_to?(:name)
-      self.author.name
-    else nil
-    end
+    self.author ? self.author.name : nil
   end
 
 end
